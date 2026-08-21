@@ -1,0 +1,2070 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Clínica Casa Lumén | Saúde e Desenvolvimento</title>
+
+    <meta name="description"
+        content="Clínica Casa Lumén Saúde e Desenvolvimento. Psicoterapia pela Terapia Cognitivo-Comportamental, avaliação e reabilitação neuropsicológica.">
+
+    <style>
+
+        /* =========================
+           CORES DA IDENTIDADE
+        ========================== */
+
+        :root {
+            --azul-principal: #8FB9C9;
+            --azul-escuro: #426978;
+            --azul-claro: #DDEEF3;
+            --azul-muito-claro: #F2F8FA;
+
+            --bege: #E8DCC8;
+            --bege-claro: #F7F1E7;
+            --bege-escuro: #CDBB9F;
+
+            --texto: #40545B;
+            --texto-claro: #6B7B80;
+
+            --branco: #FFFFFF;
+        }
+
+
+        /* =========================
+           RESET
+        ========================== */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            color: var(--texto);
+            background: var(--bege-claro);
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+
+        /* =========================
+           HEADER
+        ========================== */
+
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+
+            background: rgba(247, 241, 231, 0.96);
+
+            border-bottom: 1px solid var(--bege);
+
+            backdrop-filter: blur(10px);
+        }
+
+        .nav {
+            max-width: 1180px;
+            margin: auto;
+
+            padding: 18px 25px;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+
+        /* LOGO */
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .logo-icon {
+            width: 45px;
+            height: 45px;
+
+            border-radius: 50%;
+
+            background: var(--azul-principal);
+
+            color: white;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            font-family: Georgia, serif;
+            font-size: 23px;
+            font-weight: bold;
+
+            box-shadow: 0 4px 12px rgba(66, 105, 120, 0.15);
+        }
+
+        .logo-text strong {
+            display: block;
+
+            font-family: Georgia, serif;
+
+            font-size: 21px;
+
+            color: var(--azul-escuro);
+        }
+
+        .logo-text span {
+            font-size: 10px;
+
+            color: #8B7961;
+
+            letter-spacing: 1.5px;
+        }
+
+
+        /* MENU */
+
+        nav {
+            display: flex;
+            gap: 25px;
+            align-items: center;
+        }
+
+        nav a {
+            font-size: 14px;
+
+            color: var(--texto);
+
+            transition: 0.2s;
+        }
+
+        nav a:hover {
+            color: var(--azul-escuro);
+        }
+
+        .nav-button {
+            background: var(--azul-principal);
+
+            color: white;
+
+            padding: 11px 20px;
+
+            border-radius: 25px;
+
+            font-weight: bold;
+
+            transition: 0.2s;
+        }
+
+        .nav-button:hover {
+            background: var(--azul-escuro);
+
+            color: white;
+        }
+
+
+        /* =========================
+           HERO
+        ========================== */
+
+        .hero {
+
+            min-height: 680px;
+
+            display: flex;
+
+            align-items: center;
+
+            background:
+
+                linear-gradient(
+                    90deg,
+                    rgba(247,241,231,0.98) 0%,
+                    rgba(247,241,231,0.94) 42%,
+                    rgba(247,241,231,0.55) 100%
+                ),
+
+                center / cover;
+        }
+
+
+        .hero-content {
+
+            max-width: 1180px;
+
+            width: 100%;
+
+            margin: auto;
+
+            padding: 90px 25px;
+        }
+
+
+        .eyebrow {
+
+            color: var(--azul-escuro);
+
+            font-weight: bold;
+
+            text-transform: uppercase;
+
+            letter-spacing: 2px;
+
+            font-size: 12px;
+
+            margin-bottom: 15px;
+        }
+
+
+        h1 {
+
+            max-width: 720px;
+
+            font-family: Georgia, serif;
+
+            font-size: clamp(43px, 6vw, 70px);
+
+            line-height: 1.08;
+
+            font-weight: normal;
+
+            color: var(--azul-escuro);
+
+            margin-bottom: 25px;
+        }
+
+
+        .hero-text {
+
+            max-width: 650px;
+
+            font-size: 19px;
+
+            color: var(--texto);
+
+            margin-bottom: 30px;
+        }
+
+
+        .professional {
+
+            margin-bottom: 30px;
+
+            color: var(--texto);
+        }
+
+        .professional strong {
+
+            display: block;
+
+            font-size: 18px;
+
+            color: var(--azul-escuro);
+
+            margin-bottom: 3px;
+        }
+
+
+        /* BOTÕES */
+
+        .buttons {
+
+            display: flex;
+
+            flex-wrap: wrap;
+
+            gap: 14px;
+        }
+
+        .btn {
+
+            display: inline-block;
+
+            padding: 15px 26px;
+
+            border-radius: 30px;
+
+            font-weight: bold;
+
+            transition: 0.25s;
+        }
+
+
+        .btn-primary {
+
+            background: var(--azul-principal);
+
+            color: white;
+
+            box-shadow: 0 5px 15px rgba(66, 105, 120, 0.15);
+        }
+
+        .btn-primary:hover {
+
+            background: var(--azul-escuro);
+
+            transform: translateY(-2px);
+        }
+
+
+        .btn-secondary {
+
+            border: 1px solid var(--azul-principal);
+
+            color: var(--azul-escuro);
+
+            background: rgba(255,255,255,0.65);
+        }
+
+        .btn-secondary:hover {
+
+            background: var(--azul-principal);
+
+            color: white;
+        }
+
+
+        /* =========================
+           SEÇÕES
+        ========================== */
+
+        section {
+
+            padding: 90px 25px;
+        }
+
+        .container {
+
+            max-width: 1180px;
+
+            margin: auto;
+        }
+
+
+        .section-title {
+
+            text-align: center;
+
+            margin-bottom: 50px;
+        }
+
+
+        .section-title h2 {
+
+            font-family: Georgia, serif;
+
+            font-size: 42px;
+
+            font-weight: normal;
+
+            color: var(--azul-escuro);
+
+            margin-bottom: 12px;
+        }
+
+
+        .section-title p {
+
+            max-width: 650px;
+
+            margin: auto;
+
+            color: var(--texto-claro);
+        }
+
+
+        /* =========================
+           SERVIÇOS
+        ========================== */
+
+        .services {
+
+            background: var(--branco);
+        }
+
+
+        .cards {
+
+            display: grid;
+
+            grid-template-columns: repeat(2, 1fr);
+
+            gap: 25px;
+        }
+
+
+        .card {
+
+            padding: 40px;
+
+            border: 1px solid var(--bege);
+
+            border-radius: 20px;
+
+            background: var(--bege-claro);
+
+            transition: 0.25s;
+        }
+
+
+        .card:hover {
+
+            transform: translateY(-5px);
+
+            box-shadow:
+                0 15px 35px rgba(66, 105, 120, 0.10);
+        }
+
+
+        .card-icon {
+
+            width: 58px;
+
+            height: 58px;
+
+            border-radius: 16px;
+
+            background: var(--azul-claro);
+
+            color: var(--azul-escuro);
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            font-size: 26px;
+
+            margin-bottom: 22px;
+        }
+
+
+        .card h3 {
+
+            font-family: Georgia, serif;
+
+            color: var(--azul-escuro);
+
+            font-size: 28px;
+
+            margin-bottom: 15px;
+        }
+
+
+        .card p {
+
+            color: var(--texto-claro);
+
+            margin-bottom: 20px;
+        }
+
+
+        .card ul {
+
+            list-style: none;
+
+            color: var(--texto);
+        }
+
+
+        .card li {
+
+            margin: 9px 0;
+        }
+
+
+        .card li::before {
+
+            content: "✓";
+
+            color: var(--azul-escuro);
+
+            font-weight: bold;
+
+            margin-right: 8px;
+        }
+
+
+        /* =========================
+           SOBRE
+        ========================== */
+
+        .about {
+
+            background:
+                linear-gradient(
+                    135deg,
+                    var(--azul-muito-claro),
+                    var(--bege-claro)
+                );
+        }
+
+
+        .about-grid {
+
+            display: grid;
+
+            grid-template-columns: 0.9fr 1.1fr;
+
+            gap: 70px;
+
+            align-items: center;
+        }
+
+           .about-text h2 {
+
+            font-family: Georgia, serif;
+
+            font-weight: normal;
+
+            font-size: 45px;
+
+            color: var(--azul-escuro);
+
+            margin-bottom: 20px;
+        }
+
+
+        .about-text p {
+
+            color: var(--texto);
+
+            margin-bottom: 18px;
+        }
+
+
+        .credentials {
+
+            margin-top: 25px;
+
+            display: grid;
+
+            gap: 12px;
+        }
+
+
+        .credential {
+
+            padding: 15px 18px;
+
+            border-left: 3px solid var(--azul-principal);
+
+            background: rgba(255,255,255,0.75);
+
+            border-radius: 0 8px 8px 0;
+        }
+
+
+        .credential strong {
+
+            color: var(--azul-escuro);
+        }
+
+
+        /* =========================
+           TCC
+        ========================== */
+
+        .tcc {
+
+            background: var(--branco);
+        }
+
+
+        .tcc-content {
+
+            max-width: 850px;
+
+            margin: auto;
+
+            text-align: center;
+        }
+
+
+        .tcc-content h2 {
+
+            font-family: Georgia, serif;
+
+            font-size: 42px;
+
+            font-weight: normal;
+
+            color: var(--azul-escuro);
+
+            margin-bottom: 25px;
+        }
+
+
+        .tcc-content p {
+
+            color: var(--texto-claro);
+
+            font-size: 17px;
+
+            margin-bottom: 20px;
+        }
+
+
+        /* =========================
+           NEUROPSICOLOGIA
+        ========================== */
+
+        .neuro {
+
+            background: var(--bege-claro);
+        }
+
+
+        .neuro-grid {
+
+            display: grid;
+
+            grid-template-columns: repeat(3, 1fr);
+
+            gap: 20px;
+        }
+
+
+        .neuro-item {
+
+            background: white;
+
+            padding: 32px;
+
+            border-radius: 18px;
+
+            border-top: 4px solid var(--azul-principal);
+
+            transition: 0.2s;
+        }
+
+
+        .neuro-item:hover {
+
+            transform: translateY(-4px);
+
+            box-shadow:
+                0 10px 25px rgba(66, 105, 120, 0.08);
+        }
+
+
+        .neuro-item h3 {
+
+            font-family: Georgia, serif;
+
+            color: var(--azul-escuro);
+
+            font-size: 22px;
+
+            margin-bottom: 12px;
+        }
+
+
+        .neuro-item p {
+
+            color: var(--texto-claro);
+
+            font-size: 15px;
+        }
+
+
+        /* =========================
+           COMO FUNCIONA
+        ========================== */
+
+        .steps {
+
+            background: var(--branco);
+        }
+
+
+        .steps-grid {
+
+            display: grid;
+
+            grid-template-columns: repeat(4, 1fr);
+
+            gap: 20px;
+        }
+
+
+        .step {
+
+            text-align: center;
+        }
+
+
+        .number {
+
+            width: 58px;
+
+            height: 58px;
+
+            margin: 0 auto 20px;
+
+            border-radius: 50%;
+
+            background: var(--azul-principal);
+
+            color: white;
+
+            display: flex;
+
+            justify-content: center;
+
+            align-items: center;
+
+            font-weight: bold;
+
+            font-size: 20px;
+
+            box-shadow:
+                0 5px 12px rgba(66,105,120,0.15);
+        }
+
+
+        .step h3 {
+
+            color: var(--azul-escuro);
+
+            margin-bottom: 8px;
+        }
+
+
+        .step p {
+
+            color: var(--texto-claro);
+
+            font-size: 14px;
+        }
+
+
+        /* =========================
+           FAQ
+        ========================== */
+
+        .faq {
+
+            background:
+                linear-gradient(
+                    135deg,
+                    var(--bege-claro),
+                    var(--azul-muito-claro)
+                );
+        }
+
+
+        .faq-list {
+
+            max-width: 850px;
+
+            margin: auto;
+        }
+
+
+        details {
+
+            background: white;
+
+            margin-bottom: 12px;
+
+            padding: 20px 25px;
+
+            border-radius: 13px;
+
+            border: 1px solid var(--bege);
+        }
+
+
+        summary {
+
+            cursor: pointer;
+
+            font-weight: bold;
+
+            color: var(--azul-escuro);
+        }
+
+
+        details p {
+
+            margin-top: 15px;
+
+            color: var(--texto-claro);
+        }
+
+
+        /* =========================
+           CTA
+        ========================== */
+
+        .cta {
+
+            background:
+                linear-gradient(
+                    135deg,
+                    var(--azul-escuro),
+                    #5D8999
+                );
+
+            color: white;
+
+            text-align: center;
+        }
+
+
+        .cta h2 {
+
+            font-family: Georgia, serif;
+
+            font-size: 45px;
+
+            font-weight: normal;
+
+            margin-bottom: 15px;
+        }
+
+
+        .cta p {
+
+            max-width: 650px;
+
+            margin: 0 auto 30px;
+
+            color: #E9F3F6;
+        }
+
+
+        .cta .btn-primary {
+
+            background: var(--bege);
+
+            color: var(--azul-escuro);
+        }
+
+
+        .cta .btn-primary:hover {
+
+            background: white;
+        }
+
+
+        /* =========================
+           CONTATO
+        ========================== */
+
+        .contact {
+
+            background: var(--branco);
+        }
+
+
+        .contact-grid {
+
+            display: grid;
+
+            grid-template-columns: repeat(2, 1fr);
+
+            gap: 20px;
+        }
+
+
+        .contact-box {
+
+            text-align: center;
+
+            padding: 30px;
+
+            border: 1px solid var(--bege);
+
+            border-radius: 18px;
+
+            background: var(--bege-claro);
+        }
+
+
+        .contact-box h3 {
+
+            color: var(--azul-escuro);
+
+            margin-bottom: 8px;
+        }
+
+
+        .contact-box p {
+
+            color: var(--texto-claro);
+        }
+
+
+        .contact-box a {
+
+            color: var(--azul-escuro);
+
+            font-weight: bold;
+        }
+
+
+        .contact-box a:hover {
+
+            text-decoration: underline;
+        }
+
+
+        /* =========================
+           FOOTER
+        ========================== */
+
+        footer {
+
+            background: #385D6B;
+
+            color: white;
+
+            padding: 45px 25px;
+
+            text-align: center;
+        }
+
+
+        footer strong {
+
+            font-family: Georgia, serif;
+
+            font-size: 21px;
+        }
+
+
+        footer p {
+
+            margin-top: 10px;
+
+            font-size: 13px;
+
+            color: #DCE9ED;
+        }
+
+
+        /* =========================
+           WHATSAPP
+        ========================== */
+
+        .whatsapp {
+
+            position: fixed;
+
+            right: 22px;
+
+            bottom: 22px;
+
+            width: 62px;
+
+            height: 62px;
+
+            border-radius: 50%;
+
+            background: #25D366;
+
+            color: white;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            font-size: 28px;
+
+            box-shadow:
+                0 5px 20px rgba(0,0,0,0.20);
+
+            z-index: 999;
+
+            transition: 0.2s;
+        }
+
+
+        .whatsapp:hover {
+
+            transform: scale(1.08);
+
+        }
+
+
+        /* =========================
+           MOBILE
+        ========================== */
+
+        @media (max-width: 800px) {
+
+            nav a:not(.nav-button) {
+                display: none;
+            }
+
+
+            .hero {
+
+                min-height: 600px;
+            }
+
+
+            .hero-content {
+
+                padding: 60px 20px;
+            }
+
+
+            h1 {
+
+                font-size: 44px;
+            }
+
+
+            .hero-text {
+
+                font-size: 17px;
+            }
+
+
+            section {
+
+                padding: 65px 20px;
+            }
+
+
+            .cards,
+            .about-grid,
+            .neuro-grid,
+            .steps-grid,
+            .contact-grid {
+
+                grid-template-columns: 1fr;
+            }
+
+
+            .about-grid {
+
+                gap: 40px;
+            }
+
+
+            .professional-photo {
+
+                min-height: 400px;
+
+                box-shadow:
+                    10px 10px 0 var(--bege);
+            }
+
+
+            .section-title h2,
+            .about-text h2,
+            .tcc-content h2,
+            .cta h2 {
+
+                font-size: 35px;
+            }
+
+
+            .card {
+
+                padding: 30px;
+            }
+
+
+            .logo-text span {
+
+                display: none;
+            }
+
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+
+    <!-- =========================
+         HEADER
+    ========================== -->
+
+    <header>
+
+        <div class="nav">
+
+            <a href="#" class="logo">
+
+                <div class="logo-icon">
+                    L
+                </div>
+
+                <div class="logo-text">
+
+                    <strong>
+                        Casa Lumén
+                    </strong>
+
+                    <span>
+                        SAÚDE E DESENVOLVIMENTO
+                    </span>
+
+                </div>
+
+            </a>
+
+
+            <nav>
+
+                <a href="#servicos">
+                    Serviços
+                </a>
+
+                <a href="#sobre">
+                    Sobre
+                </a>
+
+                <a href="#faq">
+                    Dúvidas
+                </a>
+
+                <a
+                    href="https://wa.me/5521997769960"
+                    class="nav-button"
+                    target="_blank">
+
+                    Agendar atendimento
+
+                </a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+
+        <!-- =========================
+             HERO
+        ========================== -->
+
+        <section class="hero">
+
+            <div class="hero-content">
+
+                <div class="eyebrow">
+                    Clínica de Psicologia e Neuropsicologia
+                </div>
+
+
+                <h1>
+                    Cuidado psicológico para compreender, acolher e desenvolver.
+                </h1>
+
+
+                <p class="hero-text">
+
+                    Psicoterapia pela Terapia Cognitivo-Comportamental,
+                    avaliação neuropsicológica e reabilitação neuropsicológica,
+                    em um espaço de escuta, acolhimento e cuidado individualizado.
+
+                </p>
+
+
+                <div class="professional">
+
+                    <strong>
+                        Fernanda José Maria
+                    </strong>
+
+                    Psicóloga • Neuropsicóloga • Docente Universitária • Supervisora Clínica
+
+                </div>
+
+
+                <div class="buttons">
+
+                    <a
+                        href="https://wa.me/5521997769960"
+                        target="_blank"
+                        class="btn btn-primary">
+
+                        Falar pelo WhatsApp
+
+                    </a>
+
+
+                    <a
+                        href="#servicos"
+                        class="btn btn-secondary">
+
+                        Conhecer os serviços
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             SERVIÇOS
+        ========================== -->
+
+        <section class="services" id="servicos">
+
+            <div class="container">
+
+                <div class="section-title">
+
+                    <div class="eyebrow">
+                        Nossos serviços
+                    </div>
+
+                    <h2>
+                        Como podemos ajudar?
+                    </h2>
+
+                    <p>
+
+                        Diferentes possibilidades de cuidado psicológico,
+                        considerando as necessidades e características de cada pessoa.
+
+                    </p>
+
+                </div>
+
+
+                <div class="cards">
+
+
+                    <!-- PSICOTERAPIA -->
+
+                    <div class="card">
+
+                        <div class="card-icon">
+                            💬
+                        </div>
+
+
+                        <h3>
+                            Psicoterapia
+                        </h3>
+
+
+                        <p>
+
+                            Atendimento psicológico baseado na Terapia
+                            Cognitivo-Comportamental (TCC), com um processo
+                            colaborativo e individualizado.
+
+                        </p>
+
+
+                        <ul>
+
+                            <li>
+                                Atendimento psicológico individual
+                            </li>
+
+                            <li>
+                                Abordagem Cognitivo-Comportamental
+                            </li>
+
+                            <li>
+                                Processo estruturado e colaborativo
+                            </li>
+
+                            <li>
+                                Escuta e acolhimento
+                            </li>
+
+                        </ul>
+
+
+                        <br>
+
+
+                        <a
+                            href="https://wa.me/5521997769960?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20psicoterapia."
+                            target="_blank"
+                            class="btn btn-primary">
+
+                            Quero saber mais
+
+                        </a>
+
+                    </div>
+
+
+                    <!-- AVALIAÇÃO -->
+
+                    <div class="card">
+
+                        <div class="card-icon">
+                            🧠
+                        </div>
+
+
+                        <h3>
+                            Avaliação Neuropsicológica
+                        </h3>
+
+
+                        <p>
+
+                            Investigação de diferentes aspectos do funcionamento
+                            cognitivo, emocional e comportamental, considerando
+                            a história e as necessidades de cada pessoa.
+
+                        </p>
+
+
+                        <ul>
+
+                            <li>
+                                Investigação do funcionamento cognitivo
+                            </li>
+
+                            <li>
+                                Avaliação individualizada
+                            </li>
+
+                            <li>
+                                Análise dos resultados
+                            </li>
+
+                            <li>
+                                Devolutiva e orientação
+                            </li>
+
+                        </ul>
+
+
+                        <br>
+
+
+                        <a
+                            href="https://wa.me/5521997769960?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20avaliação%20neuropsicológica."
+                            target="_blank"
+                            class="btn btn-primary">
+
+                            Quero saber mais
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             SOBRE
+        ========================== -->
+
+        <section class="about" id="sobre">
+
+            <div class="container">
+
+                <div class="about-grid">
+
+
+                    <div class="professional-photo">
+                    </div>
+
+
+                    <div class="about-text">
+
+                        <div class="eyebrow">
+                            Responsável pela clínica
+                        </div>
+
+
+                        <h2>
+                            Fernanda José Maria
+                        </h2>
+
+
+                        <p>
+
+                            Psicóloga e neuropsicóloga, Fernanda José Maria
+                            é responsável pela Clínica Casa Lumen Saúde e
+                            Desenvolvimento.
+
+                        </p>
+
+
+                        <p>
+
+                            Sua atuação contempla psicoterapia pela Terapia
+                            Cognitivo-Comportamental, avaliação neuropsicológica
+                            e reabilitação neuropsicológica.
+
+                        </p>
+
+
+                        <p>
+
+                            Além da prática clínica, atua como docente universitária
+                            e supervisora clínica.
+
+                        </p>
+
+
+                        <div class="credentials">
+
+
+                            <div class="credential">
+
+                                <strong>
+                                    Psicóloga
+                                </strong>
+
+                                <br>
+
+                                Atendimento psicológico e psicoterapia.
+
+                            </div>
+
+
+                            <div class="credential">
+
+                                <strong>
+                                    Neuropsicóloga
+                                </strong>
+
+                                <br>
+
+                                Avaliação e reabilitação neuropsicológica.
+
+                            </div>
+
+
+                            <div class="credential">
+
+                                <strong>
+                                    Docente Universitária
+                                </strong>
+
+                                <br>
+
+                                Atuação acadêmica e formação profissional.
+
+                            </div>
+
+
+                            <div class="credential">
+
+                                <strong>
+                                    Supervisora Clínica
+                                </strong>
+
+                                <br>
+
+                                Experiência na supervisão de profissionais.
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             TCC
+        ========================== -->
+
+        <section class="tcc">
+
+            <div class="container">
+
+                <div class="tcc-content">
+
+                    <div class="eyebrow">
+                        Psicoterapia
+                    </div>
+
+
+                    <h2>
+                        Terapia Cognitivo-Comportamental
+                    </h2>
+
+
+                    <p>
+
+                        A Terapia Cognitivo-Comportamental considera a relação
+                        entre pensamentos, emoções e comportamentos.
+
+                    </p>
+
+
+                    <p>
+
+                        O processo psicoterapêutico é construído de maneira
+                        colaborativa, considerando a história, o contexto e
+                        as necessidades de cada pessoa.
+
+                    </p>
+
+
+                    <a
+                        href="https://wa.me/5521997769960?text=Olá!%20Gostaria%20de%20informações%20sobre%20psicoterapia%20pela%20TCC."
+                        target="_blank"
+                        class="btn btn-primary">
+
+                        Conversar sobre psicoterapia
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             NEUROPSICOLOGIA
+        ========================== -->
+
+        <section class="neuro">
+
+            <div class="container">
+
+                <div class="section-title">
+
+                    <div class="eyebrow">
+                        Neuropsicologia Clínica
+                    </div>
+
+
+                    <h2>
+                        Avaliação e Reabilitação
+                    </h2>
+
+
+                    <p>
+
+                        Conhecer o funcionamento cognitivo pode contribuir
+                        para compreender dificuldades e potencialidades.
+
+                    </p>
+
+                </div>
+
+
+                <div class="neuro-grid">
+
+
+                    <div class="neuro-item">
+
+                        <h3>
+                            Avaliação Neuropsicológica
+                        </h3>
+
+                        <p>
+
+                            Processo de investigação que considera diferentes
+                            aspectos do funcionamento cognitivo, emocional
+                            e comportamental.
+
+                        </p>
+
+                    </div>
+
+
+                    <div class="neuro-item">
+
+                        <h3>
+                            Funcionamento Cognitivo
+                        </h3>
+
+                        <p>
+
+                            Podem ser investigadas diferentes funções cognitivas,
+                            de acordo com os objetivos e necessidades da avaliação.
+
+                        </p>
+
+                    </div>
+
+
+                    <div class="neuro-item">
+
+                        <h3>
+                            Reabilitação Neuropsicológica
+                        </h3>
+
+                        <p>
+
+                            Intervenção planejada a partir das necessidades
+                            identificadas, buscando favorecer estratégias
+                            para o cotidiano.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             COMO FUNCIONA
+        ========================== -->
+
+        <section class="steps">
+
+            <div class="container">
+
+                <div class="section-title">
+
+                    <div class="eyebrow">
+                        Primeiros passos
+                    </div>
+
+                    <h2>
+                        Como funciona?
+                    </h2>
+
+                </div>
+
+
+                <div class="steps-grid">
+
+
+                    <div class="step">
+
+                        <div class="number">
+                            1
+                        </div>
+
+                        <h3>
+                            Entre em contato
+                        </h3>
+
+                        <p>
+                            Fale conosco pelo WhatsApp ou e-mail.
+                        </p>
+
+                    </div>
+
+
+                    <div class="step">
+
+                        <div class="number">
+                            2
+                        </div>
+
+                        <h3>
+                            Conversamos
+                        </h3>
+
+                        <p>
+                            Entendemos sua necessidade e sua demanda.
+                        </p>
+
+                    </div>
+
+
+                    <div class="step">
+
+                        <div class="number">
+                            3
+                        </div>
+
+                        <h3>
+                            Agendamos
+                        </h3>
+
+                        <p>
+                            Definimos o melhor horário para o atendimento.
+                        </p>
+
+                    </div>
+
+
+                    <div class="step">
+
+                        <div class="number">
+                            4
+                        </div>
+
+                        <h3>
+                            Iniciamos
+                        </h3>
+
+                        <p>
+                            O processo é conduzido de maneira individualizada.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             FAQ
+        ========================== -->
+
+        <section class="faq" id="faq">
+
+            <div class="container">
+
+                <div class="section-title">
+
+                    <div class="eyebrow">
+                        Dúvidas frequentes
+                    </div>
+
+                    <h2>
+                        Perguntas frequentes
+                    </h2>
+
+                </div>
+
+
+                <div class="faq-list">
+
+
+                    <details>
+
+                        <summary>
+                            O que é a Terapia Cognitivo-Comportamental?
+                        </summary>
+
+                        <p>
+
+                            A Terapia Cognitivo-Comportamental é uma abordagem
+                            psicológica que considera a relação entre pensamentos,
+                            emoções e comportamentos, trabalhando de maneira
+                            colaborativa e estruturada.
+
+                        </p>
+
+                    </details>
+
+
+                    <details>
+
+                        <summary>
+                            O que é uma avaliação neuropsicológica?
+                        </summary>
+
+                        <p>
+
+                            É um processo de investigação do funcionamento cognitivo,
+                            emocional e comportamental, realizado por profissional
+                            habilitado, considerando a história e as necessidades
+                            da pessoa avaliada.
+
+                        </p>
+
+                    </details>
+
+
+                    <details>
+
+                        <summary>
+                            Qual a diferença entre psicoterapia e avaliação neuropsicológica?
+                        </summary>
+
+                        <p>
+
+                            A psicoterapia é um processo de acompanhamento psicológico.
+                            Já a avaliação neuropsicológica tem como objetivo investigar
+                            aspectos específicos do funcionamento cognitivo, emocional
+                            e comportamental.
+
+                        </p>
+
+                    </details>
+
+
+                    <details>
+
+                        <summary>
+                            Como faço para agendar?
+                        </summary>
+
+                        <p>
+
+                            Você pode entrar em contato pelo WhatsApp ou pelo
+                            e-mail da Clínica Casa Lumen.
+
+                        </p>
+
+                    </details>
+
+
+                    <details>
+
+                        <summary>
+                            Existe atendimento on-line?
+                        </summary>
+
+                        <p>
+
+                            Consulte a disponibilidade e as modalidades de atendimento
+                            diretamente pelo WhatsApp.
+
+                        </p>
+
+                    </details>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             CTA
+        ========================== -->
+
+        <section class="cta">
+
+            <div class="container">
+
+                <h2>
+                    Vamos conversar?
+                </h2>
+
+
+                <p>
+
+                    Se você está buscando psicoterapia, avaliação ou
+                    reabilitação neuropsicológica, entre em contato
+                    para conhecer melhor o atendimento da Clínica Casa Lumen.
+
+                </p>
+
+
+                <a
+                    href="https://wa.me/5521997769960"
+                    target="_blank"
+                    class="btn btn-primary">
+
+                    Falar pelo WhatsApp
+
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             CONTATO
+        ========================== -->
+
+        <section class="contact">
+
+            <div class="container">
+
+                <div class="section-title">
+
+                    <div class="eyebrow">
+                        Contato
+                    </div>
+
+                    <h2>
+                        Entre em contato
+                    </h2>
+
+                </div>
+
+
+                <div class="contact-grid">
+
+
+                    <!-- WHATSAPP -->
+
+                    <div class="contact-box">
+
+                        <h3>
+                            WhatsApp
+                        </h3>
+
+                        <p>
+
+                            <a
+                                href="https://wa.me/5521997769960"
+                                target="_blank">
+
+                                (21) 99776-9960
+
+                            </a>
+
+                        </p>
+
+                    </div>
+
+
+                    <!-- EMAIL -->
+
+                    <div class="contact-box">
+
+                        <h3>
+                            E-mail
+                        </h3>
+
+                        <p>
+
+                            <a href="mailto:fernandajmaria@gmail.com">
+
+                                fernandajmaria@gmail.com
+
+                            </a>
+
+                        </p>
+
+                    </div>
+
+
+                    <!-- ENDEREÇO -->
+
+                    <div class="contact-box">
+
+                        <h3>
+                            Endereço
+                        </h3>
+
+                        <p>
+
+                            Rua Santo Afonso, nº 44<br>
+
+                            Sala 804<br>
+
+                            Tijuca – Rio de Janeiro/RJ
+
+                        </p>
+
+                    </div>
+
+
+                    <!-- INSTAGRAM -->
+
+                    <div class="contact-box">
+
+                        <h3>
+                            Instagram
+                        </h3>
+
+                        <p>
+
+                            <a
+                                href="https://www.instagram.com/casalumensaudeintegrada/"
+                                target="_blank">
+
+                                @casalumensaudeintegrada
+
+                            </a>
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer>
+
+        <strong>
+            Clínica Casa Lumen
+        </strong>
+
+
+        <p>
+            Saúde e Desenvolvimento
+        </p>
+
+
+        <p>
+            Fernanda José Maria • Psicóloga • Neuropsicóloga
+        </p>
+
+
+        <p>
+            CRP 05/62958
+        </p>
+
+
+        <p>
+            Rua Santo Afonso, nº 44, sala 804,
+            Tijuca – Rio de Janeiro/RJ
+        </p>
+
+
+        <p>
+            © 2026 Clínica Casa Lumen. Todos os direitos reservados.
+        </p>
+
+    </footer>
+
+
+    <!-- =========================
+         WHATSAPP FLUTUANTE
+    ========================== -->
+
+    <a
+        href="https://wa.me/5521997769960"
+        target="_blank"
+        class="whatsapp"
+        aria-label="Falar pelo WhatsApp">
+
+        ☎
+
+    </a>
+
+
+</body>
+</html>
